@@ -1,4 +1,5 @@
 import "./App.css";
+import { Button } from "./components/ui/button";
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <h1 className="text-5xl font-bold text-blue-600">
         🚀 Tailwind v4 is working!
       </h1>
+      <Button onClick={() => alert("Works!")}>Click me!</Button>
     </div>
   );
 }
