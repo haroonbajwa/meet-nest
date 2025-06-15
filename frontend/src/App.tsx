@@ -1,14 +1,14 @@
 import "./App.css";
-import { Button } from "./components/ui/button";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Room from "./pages/Room";
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-5xl font-bold text-blue-600">
-        🚀 Tailwind v4 is working!
-      </h1>
-      <Button onClick={() => alert("Works!")}>Click me!</Button>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/room/:id" element={<Room />} />
+    </Routes>
   );
 }
 
